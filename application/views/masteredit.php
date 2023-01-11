@@ -21,22 +21,17 @@
 
             <form method="post" id="submit" action="<?php echo base_url() ?>main/masteredit">
             <?php  
+
+           
+           // $tt['rec'] = $records;
+           $rec = $records[0];
+
             
-            foreach ($records as $rec) {  
-            }
-
-           if($records == NULL){
-
-            $id = '';
-            $set = '';
-           }else{
-
+        
             $id = $rec['id'];
             $set = $rec['Name'];
-           }
-            
        
-         
+            
        // print_r($id); die();
 
            ?>
@@ -55,9 +50,9 @@
               
               <div class="form-group">
                 <div class="col-md-12">
-              
+               
                   <input type="submit" name="submit" id = "meal_info_submit"      onclick="return checkSubmit()" value="Editt" class="btn btn-primary pull-right">
-        
+          
                 </div>
               </div>
              
@@ -71,7 +66,6 @@
     </section> 
   </div>
   
-          </form>
   <script>
   function checkSubmit(){       
     if (validationCorrect()) {

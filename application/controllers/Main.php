@@ -69,6 +69,7 @@ public function masteradd(){
     $this->load->library('form_validation');
    
     $tt = $_POST;
+    //print_r($tt);die();
     if($tt == NULL){
 
     }else{
@@ -97,6 +98,7 @@ public function masteradd(){
     // $this->Main_model->masteradd($data);
    
     $data['tradisi'] = $this->Main_model->masterupdate($id,$data);
+    redirect('/main/masterlist', 'refresh');
    }
 
     $this->load->view('index');
