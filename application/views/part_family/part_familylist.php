@@ -7,11 +7,11 @@
   <div class="card">
       <div class="card-header">
         <div class="d-inline-block">
-          <h3 class="card-title"><i class="fa fa-list"></i>&nbsp;Master List</h3>
+          <h3 class="card-title"><i class="fa fa-list"></i>&nbsp;Part Family List</h3>
         </div>
         <div class="d-inline-block float-right">
           <?php //if($this->rbac->check_operation_permission('add')): ?>
-            <a href="<?php echo base_url (); ?>main/masteradd" class="btn btn-success"> Add Master <i class="fa fa-plus"></i> </a>
+            <a href="<?php echo base_url (); ?>main/part_familyadd" class="btn btn-success"> Add Part Family <i class="fa fa-plus"></i> </a>
          
         </div>
       </div>
@@ -31,14 +31,15 @@
              
           ?>
           
+          <?php// print_r($records); die();  ?>
             <tr>
              <th > <?php echo "{$rec['id']}"; ?>  </th>
-              <th><?php echo "{$rec['Name']}"; ?></th>
+              <th> <?php echo "{$rec['Name']}"; ?></th>
               <!-- <th width="200" class="text-right"><?php echo "{$rec['Name']}"; ?> </th> -->
               <th  width="200" class="text-left">
-           <a font-size:50%; title="View" class="view btn btn-sm btn-info" href="<?php echo base_url()?>main/masterlist"> <i class="fa fa-eye"></i></a >
-            <a title="Edit" class="update btn btn-sm btn-warning"  href="<?php echo base_url()?>main/masteredit/<?php echo  "{$rec['id']}"; ?>"> <i class="fa fa-edit"></i></a>
-            <a title="Delete" class="delete btn btn-sm btn-danger" href="<?php echo base_url()?>main/masterdelete/<?php echo  "{$rec['id']}"; ?>" title="Delete" onclick="return confirm(\'Do you want to delete ?\')"> <i class="fa fa-trash"></i></a></th>
+           <a font-size:50%; title="View" class="view btn btn-sm btn-info" href="<?php echo base_url()?>main/part_familylist"> <i class="fa fa-eye"></i></a >
+            <a title="Edit" class="update btn btn-sm btn-warning"  href="<?php echo base_url()?>main/part_familyedit/<?php echo  "{$rec['id']}"; ?>"> <i class="fa fa-edit"></i></a>
+            <a title="Delete" class="delete btn btn-sm btn-danger" href="<?php echo base_url()?>main/part_familydelete/<?php echo  "{$rec['id']}"; ?>" title="Delete" onclick="return confirm(\'Do you want to delete ?\')"> <i class="fa fa-trash"></i></a></th>
             </tr>
 
             <?php  }

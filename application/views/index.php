@@ -180,14 +180,14 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
+            <!-- <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="./index.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
@@ -206,7 +206,7 @@
                   <p>Dashboard v3</p>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </li>
         
 
@@ -377,30 +377,104 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/advanced.html" class="nav-link">
+                <a href="<?php echo base_url (); ?>main/ppap_masterlist" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Advanced Elements</p>
+                  <p>PPAP Index Master</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
+                <a href="<?php echo base_url (); ?>main/part_familylist" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
+                  <p>Part Family</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
+                <a href="<?php echo base_url (); ?>main/customer_list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
+                  <p>Customers</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url (); ?>main/operation_number_list" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Operation Number</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="<?php echo base_url (); ?>main/part_type_list" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Part Type</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url (); ?>main/email_master_list" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Email Master</p>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
+          <li class="nav-item">
+          <a href="<?php echo base_url (); ?>main/erp_users_list" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
-                Tables123
+              ERP Users
+                <!-- <i class="fas fa-angle-left right"></i>  -->
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+          <a href="<?php echo base_url (); ?>parts/parts_add" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+               Parts
+                <!-- <i class="fas fa-angle-left right"></i>  -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+          <a href="<?php echo base_url (); ?>parts/standard_documents_list" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+              Standard Library Documents
+                <!-- <i class="fas fa-angle-left right"></i>  -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+          <a href="<?php echo base_url (); ?>parts/ppap_status" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+              PPAP status
+                <!-- <i class="fas fa-angle-left right"></i>  -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+          <a href="<?php echo base_url (); ?>parts/drawing_history" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+              Drawing History
+                <!-- <i class="fas fa-angle-left right"></i>  -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+          <a href="<?php echo base_url (); ?>main/sign_in" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+             Logout
+                <!-- <i class="fas fa-angle-left right"></i>  -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <!-- <a href="<?php echo base_url (); ?>main/erp_users_list" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+              Table
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -425,7 +499,7 @@
                 </a>
               </li>
             </ul>
-          </li>
+          </li> -->
 
 <!--           
           <li class="nav-header">EXAMPLES</li>
